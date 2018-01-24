@@ -1,0 +1,78 @@
+/* Wild Edible Plants of Vancouver Island
+
+Stylesheet: Find Plant Image Gallery Stylesheet
+
+*/
+
+// Introduction Section
+
+.content-section-intro-directory {
+	padding-top: 7%;
+	padding-bottom: 7%;
+	@media(max-width:767px) {
+		    padding: 50px 0 5px 0;
+	}
+	h1.wild-edibles-title {
+		text-transform: uppercase;
+		color: @teal;
+		font-size: 30px;
+	}
+	p {
+		color: @green;
+	}	
+}
+
+// Gallery
+
+.gallery {
+	
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2%;
+	h3 {
+		text-align: center;
+	}
+	.plant-name {
+		padding-top: 2%;
+		padding-bottom: 1%;
+	}
+	.unique-plant {
+		padding: 0 1% 4%;
+		a {
+			color: #000;
+		}
+		&:hover {
+			a, p, h3 {
+				color: @red;
+				text-decoration: none;
+			}
+			img {
+				opacity: 0.7;
+			}
+		}
+		
+		@media(max-width:991px) {
+			margin-bottom: 5%;
+		}
+		// Plant Results Page Image
+		img.img-responsive.result-image {
+			opacity: 1.0;
+			&:hover {
+				opacity: 1.0;
+			}
+		}
+	}
+	.img-responsive {
+		margin: auto;
+		width: 100%;
+	}
+
+	@media(max-width:991px) {
+		.unique-plant:nth-of-type(2n + 1) {
+			clear: both;
+		}
+	}
+	
+}

@@ -1,0 +1,264 @@
+/*
+ * Start Bootstrap - Landing Page (http://startbootstrap.com/)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+// Landing Header
+
+#landing-header {
+	background: url(../img/wild-edible-plants-of-vancouver-island.jpg) no-repeat center center;
+    background-size: cover;
+	
+	// Landing Page .fixed-side-nav .side-nav Styling 
+	// Change global styles for side nav in global-style.css
+	// Change side nav positioning for plant-results and find-plant-gallery in global-style.css
+	.fixed-side-nav.landing-page {
+    	position: fixed;
+    	right: 0px;
+   		top: 58px;
+		z-index: 1;
+	}	
+}
+
+
+// Introduction Section
+
+.content-section-intro {
+    padding: 50px 0;
+    background-color: #FFFFFF;
+	@media(max-width: 767px) {
+		padding: 0 0;
+	}
+
+	p.lead.intro-text {
+		color: @green;
+	}
+	p.side-info-text {
+		color: @teal;
+		line-height: 2;
+		font-family: @sans-serif;
+	}
+	
+}
+
+// Safety Tips Section
+
+.content-section-safety {
+    padding: 0 0 50px 0;
+	@media(max-width: 767px) {
+		padding: 30px 0 50px
+	}
+    //border-top: 1px solid #e7e7e7;
+    //border-bottom: 1px solid #e7e7e7;
+	img.img-responsive{
+		float: left;
+		max-width: 65px;
+		height: auto;
+		margin-right: 2%;
+		width: 15%;
+		margin-top: -24px;
+		
+		@media(max-width:767px) {
+			float: none;
+    max-width: 65px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 30px;
+			width: 100%;
+			margin-top: 0px;
+		}
+		
+	}
+	h2.section-heading.safety-tips {
+		color: @teal;
+		float: left;
+		width: 75%;
+		@media(max-width:767px) {
+			clear: left;
+			margin: auto;
+			text-align: center;
+			width: 100%;
+			margin-top: -10px;
+			margin-bottom: 20px;
+		}
+		@media(min-width:768px) and (max-width:1199px) {
+			margin-top: -14px;
+		}
+		@media(min-width:1200px){
+		margin-top: 0px;	
+		}
+	}
+	p.intro-text-safety {
+		color: @teal;
+	}
+}
+
+.content-section-safety ul, .content-section-harvesting ul {
+	padding-left: 0;
+	list-style: none;
+	li {
+	padding: 8px 3px;
+		float: left;
+		&:before {
+			content: "+"; /* Insert content that looks like bullets */
+			padding-right: 5px;
+			position: absolute;
+			margin-left: -18px;
+			}	
+}
+}
+
+// Plant Harvesting Section
+
+.content-section-harvesting {
+	padding: 50px 0;
+	background: @teal;
+	img.img-responsive{
+		float: left;
+		max-width: 75px;
+		height: auto;
+		margin-right: 2%;
+		@media(max-width:767px) {
+			float: none;
+    max-width: 65px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 30px;
+			width: 100%;
+			margin-top: 0px;
+		}
+
+	}
+	h2.section-heading.harvesting-tips {
+		color: #fff;
+		float: left;
+		@media(max-width:767px) {
+			clear: left;
+			margin: auto;
+			text-align: center;
+			width: 100%;
+			margin-top: -10px;
+			margin-bottom: 30px;
+		}
+		@media(min-width:1200px){
+		margin-top: 24px;	
+		}
+	}
+	p.lead.intro-harvesting-text, p.intro-text-harvesting {
+		color: #fff;
+		clear: left;
+	}
+	
+}
+
+// Herbal Medicine Section
+
+.content-section-medicine {
+	padding: 50px 0;
+	img.img-responsive{
+		float: left;
+		max-width: 93px;
+		height: auto;
+		margin-right: 2%;
+		@media(max-width:767px) {
+			float: none;
+    max-width: 65px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 30px;
+			width: 100%;
+			margin-top: 0px;
+		}
+	}
+	h2.section-heading.medicine {
+		color: @teal;
+		float: left;
+		@media(max-width:767px) {
+			clear: left;
+			margin: auto;
+			text-align: center;
+			width: 100%;
+			margin-top: -10px;
+			margin-bottom: 30px;
+		}
+		@media(min-width:1200px){
+		margin-top: 19px;	
+		}
+	}
+	p.lead.intro-medicine-text {
+		color: @green;
+		clear: left;
+	}
+}
+
+// Resources Section + Background Image
+
+.content-section-resources {
+	padding: 50px 0 0 0;
+	@media(max-width:767px) {
+			padding: 0;
+		}
+	div.container.resources-wrapper {
+	background: rgba(255,255,255,0.80);
+		padding: 50px 50px;
+		max-width: 80%;
+		@media(max-width:767px) {
+			padding-left: 15px;
+   			 padding-right: 10px;
+		}
+	}
+	
+	h3.section-heading.text-center.wild-edibles-title {
+		color: @teal;
+	}
+	h4.resource-headings {
+		color: @teal;
+		font-size: @medium-font;
+		font-family: @serif;
+		margin-bottom: 4%;
+		margin-top: 8%;
+		font-weight: 700;
+	}
+	
+	div.resources {
+		margin-left: 50px;
+		@media(max-width:767px) {
+			margin-left: 0px;
+		}
+	}
+	
+	ul {
+		list-style: none;
+		padding-left: 0;
+		li{
+			font-size: @small-font;
+			line-height: 2;
+			padding-left: 0;
+		}
+		a {
+			color: #000;
+			&:hover{
+				color: @teal;
+				text-decoration: none;
+			} 
+		}
+	}
+}
+
+.banner {
+    padding: 100px 0 0;
+    color: #f8f8f8;
+    background: url(../img/herbal-medicine-resources.jpg) no-repeat center center;
+    background-size: cover;
+	ul {
+    margin-bottom: 0;
+	}
+
+}
+@media(max-width:767px) {
+	div.col-md-3 {
+	padding-left: 25px;
+    padding-right: 25px;
+	}
+}

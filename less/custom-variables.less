@@ -1,0 +1,140 @@
+/* Wild Edible Plants of Vancouver Island
+
+Stylesheet: Custom Variables
+
+*/
+
+// Colors
+
+@teal: rgba(97,178,134,1.00);
+@red: rgba(187,37,45,1.00);
+@green: rgba(167,214,69,1.00);
+@light-green: rgba(213,232,146,1.00);
+
+@light-green-opaque: rgba(213,232,146,0.75);
+
+// Text
+
+@kerning: 1px;
+@small-font: 12px;
+@medium-font: 14px;
+@body-font: 16px;
+
+@sans-serif: "Overpass", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+@serif: "Roboto Slab", serif;
+
+
+// Find Plant Characteristic Mixins
+
+
+@step1: url(../img/find-plant-step1.jpg);
+@step2: url(../img/find-plant-step2.jpg);
+@step3: url(../img/find-plant-step3.jpg);
+@step4: url(../img/find-plant-step4.jpg);
+
+
+  .step (@step) {
+   background: @step no-repeat center center;
+   background-size: cover;
+	max-height: 95%;
+	  width: auto;
+	  min-height: 95%;
+	  @media(max-width:767px) {
+		  max-height: 105%;
+	  }
+  }
+  
+
+// Header Global Style Mixin
+
+.intro-header-mixin {
+	padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: @light-green-opaque;
+    border-radius: 0;
+    position: relative;
+    top: 6.9%;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.38);
+    z-index: 1000;
+	width: 100%;
+	ol {
+		margin-bottom: 0;
+		&.breadcrumb {
+		text-align: left;
+		background: rgba(0,0,0,0.0);
+		//padding: 2%;
+		border-radius: 0;
+		font-weight: 700;
+		//box-shadow: 0px 1px 1px rgba(0,0,0,0.38);
+		li{
+			color: #000;
+			font-size: @medium-font;
+			text-transform: uppercase;
+			&.active {
+					color: @red;
+				}
+			a {
+				color: #000;
+				text-decoration: none;
+				
+				&:hover {
+					color: @red;
+				}
+			}
+			+li:before {
+				padding: 8px;
+				color: #000;
+			}
+		}
+		}
+		}
+		h2.question.text-center	{
+			text-transform: uppercase;
+			color: @teal;
+	}
+	p.step {
+		color: @red;
+		text-align: left;
+		font-weight: 700;
+	}
+	ul li {
+		text-decoration: none;
+		display: inline-block;
+	}
+	
+	
+	.intro-message.find-plant-title {
+    position: relative;
+    padding-top: 5%;
+	padding-bottom: 0;
+    margin-bottom: 0;
+		
+		h1 {
+		margin: 0;
+		text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+		font-size: 2em;
+		text-transform: uppercase;
+		padding-bottom: 5%;
+		}
+		.lead.intro-text.begin {
+			color: @red;
+		}
+		
+		.lead.intro-text.go-to {
+			color: @teal;
+		}
+	}
+	div.row.content-wrapper {
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.38);
+	padding: 7% 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90%;
+	}
+}
+
+
+
+
